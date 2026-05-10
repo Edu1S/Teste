@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prime Lar Imobiliária</title>
+  <meta name="description" content="Encontre imóveis para comprar ou alugar com a Prime Lar Imobiliária." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="logo" href="#">Prime <span>Lar</span></a>
+      <nav>
+        <ul>
+          <li><a href="#imoveis">Imóveis</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <a class="btn" href="#contato">Agendar visita</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>Seu novo imóvel está aqui</h1>
+        <p>Compra, venda e locação com atendimento consultivo, transparência e as melhores oportunidades da região.</p>
+        <form id="searchForm" class="search-box">
+          <select id="tipo">
+            <option value="">Tipo</option>
+            <option value="apartamento">Apartamento</option>
+            <option value="casa">Casa</option>
+            <option value="comercial">Comercial</option>
+          </select>
+          <select id="negocio">
+            <option value="">Negócio</option>
+            <option value="venda">Venda</option>
+            <option value="aluguel">Aluguel</option>
+          </select>
+          <input id="cidade" type="text" placeholder="Cidade ou bairro" />
+          <button type="submit">Buscar</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="imoveis">
+      <div class="container">
+        <div class="section-head">
+          <h2>Imóveis em destaque</h2>
+          <p>Selecionamos opções com ótimo custo-benefício e documentação regularizada.</p>
+        </div>
+        <div class="cards" id="propertyGrid"></div>
+      </div>
+    </section>
+
+    <section class="section light" id="sobre">
+      <div class="container about">
+        <div>
+          <h2>Atendimento humano + tecnologia</h2>
+          <p>Na Prime Lar você recebe suporte completo: análise de perfil, curadoria de imóveis, negociação e acompanhamento jurídico até a assinatura do contrato.</p>
+          <ul>
+            <li>+12 anos de mercado</li>
+            <li>Equipe de corretores credenciados</li>
+            <li>Parcerias com bancos para financiamento</li>
+          </ul>
+        </div>
+        <div class="stats">
+          <article><strong>1.200+</strong><span>Imóveis vendidos</span></article>
+          <article><strong>450+</strong><span>Locações ativas</span></article>
+          <article><strong>98%</strong><span>Clientes satisfeitos</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="depoimentos">
+      <div class="container">
+        <div class="section-head">
+          <h2>Quem compra com a gente recomenda</h2>
+        </div>
+        <div class="testimonials">
+          <blockquote>“Fechei meu apartamento em 3 semanas. Processo rápido e sem dor de cabeça.”<cite>— Carla M.</cite></blockquote>
+          <blockquote>“A equipe foi transparente do início ao fim. Excelente atendimento.”<cite>— Rodrigo S.</cite></blockquote>
+          <blockquote>“Conseguimos alugar nosso imóvel acima da expectativa.”<cite>— Fernanda e Paulo</cite></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section light" id="contato">
+      <div class="container contact">
+        <div>
+          <h2>Fale com um corretor</h2>
+          <p>Preencha o formulário e nossa equipe entrará em contato em até 1 hora útil.</p>
+        </div>
+        <form id="contactForm">
+          <input type="text" id="nome" placeholder="Seu nome" required />
+          <input type="email" id="email" placeholder="Seu e-mail" required />
+          <input type="tel" id="telefone" placeholder="Seu telefone" required />
+          <textarea id="mensagem" rows="4" placeholder="Conte o que procura"></textarea>
+          <button type="submit">Enviar mensagem</button>
+          <p id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <p>© 2026 Prime Lar Imobiliária. Todos os direitos reservados.</p>
+      <p>CRECI 00000-J • contato@primelar.com.br • (11) 99999-9999</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
